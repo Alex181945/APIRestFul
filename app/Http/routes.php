@@ -14,3 +14,31 @@
 Route::get('/', function () {
     return view('plantilla.vistas.home');
 });
+
+
+Route::get('/login', function () {
+    return view('plantilla.vistas.home');
+});
+
+
+Route::get('/logout', function () {
+    return view('plantilla.vistas.home');
+});
+
+
+Route::get('/alumnos', function () {
+    return view('plantilla.vistas.home');
+});
+
+
+Route::get('/alumno/muestra', function () {
+    return view('plantilla.vistas.home');
+});
+
+Route::get('/alumno/crea', function () {
+    return view('plantilla.vistas.home');
+});
+
+Route::get('/alumno/edita', function () {
+    return view('plantilla.vistas.home');
+});
