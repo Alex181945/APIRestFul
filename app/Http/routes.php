@@ -30,10 +30,7 @@ Route::get('/alumnos', function () {
     return view('plantilla.vistas.home');
 });
 
-
-Route::get('/alumno/muestra', function () {
-    return view('plantilla.vistas.home');
-});
+Route::get('/alumno/muestra', 'Catalogos\AlumnoController@getShow');
 
 Route::get('/alumno/crea', function () {
     return view('plantilla.vistas.home');

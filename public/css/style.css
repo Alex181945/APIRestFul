@@ -1,0 +1,21 @@
+/*
+ *
+ *	Estilos Generales
+ *
+ */
+
+ body {
+	background-attachment: fixed, scroll;
+	background-clip: border-box, border-box;
+	background-color: #d2cac6;
+	background-image: url("/imagen/halo.png");
+	background-origin: padding-box, padding-box;
+	background-position: center center, 0 0;
+	background-repeat: no-repeat, repeat;
+	background-size: cover, auto auto;
+	margin: 0px;
+	padding: 0px;
+    /* Esto es un hack para que funcione el fondo en IE8 */
+	background:#713C24 url("imagenes/ladrillos.jpg")\0/;
+	/* Fin del hack*/
+}

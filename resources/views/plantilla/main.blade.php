@@ -10,6 +10,7 @@
 
 	<!-- Styless -->
     <link rel="stylesheet" type="text/css" href="{{asset('/bootstrap/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('/css/style.css')}}" />
 
 </head>
 <body>
@@ -19,7 +20,7 @@
 		<!-- Encabezado -->
 
 		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="#">SAE</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			</button>
@@ -56,7 +57,7 @@
 
 		<footer class="footer">
 	      <div class="container">
-	        <span class="text-muted">Place sticky footer content here.</span>
+	        <span class="text-muted"><center>Derechos Reservados 2017</center></span>
 	      </div>
 	    </footer>
 
