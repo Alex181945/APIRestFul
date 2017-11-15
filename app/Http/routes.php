@@ -15,11 +15,9 @@ Route::get('/', function () {
     return view('plantilla.vistas.home');
 });
 
+Route::get('/login', 'LoginController@getLogin');
 
-Route::get('/login', function () {
-    return view('plantilla.vistas.home');
-});
-
+Route::post('/validaLogin', 'LoginController@postLogin');
 
 Route::get('/logout', function () {
     return view('plantilla.vistas.home');
@@ -30,7 +28,7 @@ Route::get('/alumnos', function () {
     return view('plantilla.vistas.home');
 });
 
-Route::get('/alumno/muestra', 'Catalogos\AlumnoController@getShow');
+Route::get('/alumno/muestra', 'AlumnoController@getShow');
 
 Route::get('/alumno/crea', function () {
     return view('plantilla.vistas.home');

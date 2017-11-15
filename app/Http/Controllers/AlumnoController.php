@@ -10,7 +10,7 @@ class AlumnoController extends Controller
 {
     
     public	function getShow(){
-    	return	view('alumno.muestra'); 
+    	return	view('seguridad.login'); 
     }
 
 }
