@@ -2,10 +2,8 @@
 
 @section('contenido')
 
-	<div class="h-100"> 
-	<div class="d-flex justify-content-center align-items-center">
-
-		
+	
+	<div class="d-flex justify-content-center align-items-center">	
 		<form action="/validaLogin" method="post">
 
 			<div class="input-group">
@@ -26,6 +24,6 @@
 
 		</form>
 	</div>
-	</div>
+	
 
 @endsection
