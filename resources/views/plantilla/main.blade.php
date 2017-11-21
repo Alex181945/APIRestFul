@@ -10,6 +10,7 @@
 
 	<!-- Styless -->
     <link rel="stylesheet" type="text/css" href="{{asset('/bootstrap/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('/fontAwesome/css/font-awesome.min.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('/css/style.css')}}" />
 
     <style type="text/css">
@@ -41,7 +42,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
 				      	</li>
 				      	<li class="nav-item">
 				        	<a class="nav-link" href="#">Nuestra Historia</a>
@@ -55,15 +56,20 @@
 				        	</div>
 				        	
 				      	</li>
+
+				      	<li class="nav-item">
+				      		<a class="nav-link" href="/login">Inicia Sesión</a>
+				      	</li>
 				    </ul>			    
 				</div>		  
 			</nav>
 
 			<!-- Fin Encabezado -->
 
-
+			<div class="container">
 			@section('contenido')
 			@show
+			</div>
 
 
 			<!-- Pie de Pagina -->
