@@ -13,7 +13,24 @@ class LoginController extends Controller
     	return view('seguridad.login'); 
     }
 
-    public function postLogin(){
+    public function postLogin(Request $request){
+
+    	$lUsuario = false;
+    	$lPass    = false;
+
+    	if ($request->usuario == "" || $request->usuario == null) {
+    		$lUsuario = true;
+    	}
+
+    	if ($request->password == "" || $request->password == null) {
+    		$lPass = true;
+    	}
+
+    	if ($lUsuario || $lPass) {
+    		return view('seguridad.login', array('usuario'	=>	$lUsuario, 
+    			'password' => $lPass, 'usuValor' => $request->usuario));
+    	}
+
     	return view('plantilla.vistas.home');
     }
 
