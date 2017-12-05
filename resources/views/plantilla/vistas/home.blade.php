@@ -1,9 +1,10 @@
 @extends('plantilla.main')
 
-@section('contenido')
+
+@section('carousel')
 
 	<!-- Carousel -->
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -11,16 +12,28 @@
 		</ol>
 					
 		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="d-block w-100" src="{{asset('/imagen/pizza1.png')}}" alt="First slide">
+			<div class="carousel-item active" style="height: 100vh;">
+				<img class="d-block w-100" src="{{asset('/imagen/estudiantes3.jpg')}}" alt="First slide">
+				<div class="carousel-caption d-none d-md-block">
+					<h3 style="color:black;">Terminaste el bachillerato y no sabes que estudiar</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien at arcu facilisis auctor in vel velit. Vivamus accumsan leo nulla, vel placerat purus laoreet quis. Suspendisse dapibus non neque et pharetra. Vivamus vel iaculis lectus. Cras lorem neque, molestie at sollicitudin sit amet, eleifend vel turpis. Pellentesque enim lacus, scelerisque nec blandit ac, volutpat at urna. Donec nibh nulla, blandit a viverra vel, elementum at nunc. Pellentesque id risus tortor.</p>
+				</div>
             </div>
 
-            <div class="carousel-item">
-            	<img class="d-block w-100" class="img-fluid" src="{{asset('/imagen/pizza1.png')}}" alt="Second slide">
+            <div class="carousel-item" style="height: 100vh;">
+            	<img class="d-block w-100" class="img-fluid" src="{{asset('/imagen/estudiantes2.jpg')}}" alt="Second slide">
+            	<div class="carousel-caption d-none d-md-block">
+					<h3>Tu mejor opcion somos nosotros</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien at arcu facilisis auctor in vel velit. Vivamus accumsan leo nulla, vel placerat purus laoreet quis. Suspendisse dapibus non neque et pharetra. Vivamus vel iaculis lectus. Cras lorem neque, molestie at sollicitudin sit amet, eleifend vel turpis. Pellentesque enim lacus, scelerisque nec blandit ac, volutpat at urna. Donec nibh nulla, blandit a viverra vel, elementum at nunc. Pellentesque id risus tortor.</p>
+				</div>
             </div>
 
-            <div class="carousel-item">
-            	<img class="d-block w-100" src="{{asset('/imagen/pizza1.png')}}" alt="Third slide">
+            <div class="carousel-item" style="height: 100vh;">
+            	<img class="d-block w-100" src="{{asset('/imagen/estudiantes1.jpg')}}" alt="Third slide">
+            	<div class="carousel-caption d-none d-md-block">
+					<h3>Ven Conocenos</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut sapien at arcu facilisis auctor in vel velit. Vivamus accumsan leo nulla, vel placerat purus laoreet quis. Suspendisse dapibus non neque et pharetra. Vivamus vel iaculis lectus. Cras lorem neque, molestie at sollicitudin sit amet, eleifend vel turpis. Pellentesque enim lacus, scelerisque nec blandit ac, volutpat at urna. Donec nibh nulla, blandit a viverra vel, elementum at nunc. Pellentesque id risus tortor.</p>
+				</div>
             </div>
 		</div>
 
@@ -35,6 +48,11 @@
 		</a>
 	</div>
 	<!-- Fin Carousel -->
+
+@endsection
+
+
+@section('contenido')	
 
 	<!-- Servicios -->
 

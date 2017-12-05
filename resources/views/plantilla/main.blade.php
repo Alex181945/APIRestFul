@@ -26,64 +26,66 @@
 </head>
 <body>
 
-	<div class="container-fluid">
+	<!-- Carousel -->
+	@section('carousel')
+	@show
+	<!-- Fin Carousel -->
 
-		<div class="container">
-			
 
-			<!-- Encabezado -->
+	<!-- Encabezado -->
 
-			<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-				<a class="navbar-brand" href="#">SAE</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				</button>
+	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+		<a class="navbar-brand" href="#">SAE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
-				      	</li>
-				      	<li class="nav-item">
-				        	<a class="nav-link" href="#">Nuestra Historia</a>
-				      	</li>
-				      	<li class="nav-item dropdown">
-				        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios Educativos</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#">Nuestra Historia</a>
+		      	</li>
+		      	<li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios Educativos</a>
 				        
-				        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					          	<a class="dropdown-item" href="#">Actividades Extraescolares</a>
-					          	<a class="dropdown-item" href="#">Actividades Deportivas</a>
-				        	</div>
+		        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          	<a class="dropdown-item" href="#">Actividades Extraescolares</a>
+			          	<a class="dropdown-item" href="#">Actividades Deportivas</a>
+		        	</div>
 				        	
-				      	</li>
+		      	</li>
 
-				      	<li class="nav-item">
-				      		<a class="nav-link" href="/login">Inicia Sesión</a>
-				      	</li>
-				    </ul>			    
-				</div>		  
-			</nav>
+		      	<li class="nav-item">
+		      		<a class="nav-link" href="/login">Inicia Sesión</a>
+		      	</li>
+		    </ul>			    
+		</div>		  
+	</nav>
 
-			<!-- Fin Encabezado -->
+	<!-- Fin Encabezado -->	
 
-			<div class="container">
+	<!-- Contenidos -->
+	<div class="container">
+		<div class="container">
 			@section('contenido')
 			@show
-			</div>
-
-
-			<!-- Pie de Pagina -->
-
-			<footer class="footer">
-		      <div class="container">
-		        <span class="text-muted"><center>Derechos Reservados 2017</center></span>
-		      </div>
-		    </footer>
-
-			<!-- Fin Pie de Pagina -->
-			
 		</div>
 	</div>
+	<!-- Fin Contenidos -->
+
+	<!-- Pie de Pagina -->
+
+	<footer class="footer">
+	    <div class="container d-flex justify-content-center">
+	    	<span style="color: red;">Derechos Reservados 2017</span>
+	    </div>
+	</footer>
+
+	<!-- Fin Pie de Pagina -->
+	
 
 	<!-- Scripts -->
     <script src="{{asset('/jquery/lib/jquery-3.2.1.min.js')}}" type="text/javascript"></script>

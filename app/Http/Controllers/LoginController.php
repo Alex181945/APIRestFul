@@ -31,6 +31,11 @@ class LoginController extends Controller
     			'password' => $lPass, 'usuValor' => $request->usuario));
     	}
 
+    	/*Verificacion de usuario*/
+    	
+    	/*Tipos de Letra*/
+    	
+
     	return view('plantilla.vistas.home');
     }
 
